@@ -28,9 +28,11 @@ const AddToCart = ({product}) => {
       return tempAmount
     })
   }
+  console.log(colors)
   return <Wrapper>
     <div className='colors'>
       <span>colors: </span>
+      
       <div>{colors.map((color,index) => {
         return <button key={index}
           className={`color-btn ${mainColor === color ? 'active':null}`}
